@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 
 export class Layout extends Component {
   render() {
