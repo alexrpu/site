@@ -7,8 +7,6 @@ import Portfolio from "./Portfolio";
 
 function App() {
   return (
-    <div>
-      <h1>Basic Example</h1>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -16,7 +14,6 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
-    </div>
   );
 }
 
