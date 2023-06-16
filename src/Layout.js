@@ -4,13 +4,13 @@ import { Outlet, Link } from 'react-router-dom'
 export class Layout extends Component {
   render() {
     return (
-      <div class="flex flex-col bg-gray-900 text-blue-300 h-screen text-4xl font-bold">
-        <nav class="flow-root p-2">
+      <div class="flex flex-col h-screen text-4xl font-bold">
+        <nav class="flow-root p-4 px-10 border-b border-black">
           <div class="float-left p-2">
             <h1>AP</h1>
           </div>
-          <div class="float-right p-2">
-            <ul class="flex space-x-4">
+          <div class="float-right py-2">
+            <ul class="flex space-x-10">
                 <li class="hover:text-blue-400">
                 <Link to="/">Home</Link>
                 </li>
@@ -24,22 +24,14 @@ export class Layout extends Component {
           </div>
         </nav>
 
-        <body class="flex-1 text-center">
+        <body class="flex flex-1 items-center justify-center">
           <Outlet />
         </body>
 
-        <footer class="flex p-2">
-          <div class="flex-1 p-2">
-          <h2>Contact</h2>
-          <p>Email: alexander.r.pu@gmail.com</p>
-          <p>Phone: 604-704-0393</p>
-          </div>
-
-          <div class="flex-1 p-2">
-          <h2>Links</h2>
-          <p>Github: </p>
-          <p>LinkedIn: </p>
-          </div>
+        <footer class="flex py-5 px-8 justify-end space-x-8">
+          <a href="mailto:alexander.r.pu@gmail.com"><i class="fa-solid fa-square-envelope fa-lg"></i></a>
+          <a href='https://www.linkedin.com/in/alexanderpu'><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          <a href='https://github.com/alexrpu'><i class="fa-brands fa-square-github fa-lg"></i></a>
         </footer>
       </div>
     )
