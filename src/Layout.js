@@ -5,7 +5,7 @@ export class Layout extends Component {
   render() {
     return (
       <div class="flex flex-col h-screen text-text text-xl font-bold">
-        <nav class="p-2 px-8 border-b border-black bg-background">
+        <nav class="p-2 px-8 bg-background">
           <div class="float-left p-2">
             <h1>AP</h1>
           </div>
