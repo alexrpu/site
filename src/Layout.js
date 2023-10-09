@@ -14,9 +14,9 @@ export class Layout extends Component {
                 <li class="hover:text-primary">
                 <Link to="/">Home</Link>
                 </li>
-                <li class="hover:text-primary">
+                {/* <li class="hover:text-primary">
                 <Link to="/about">About</Link>
-                </li>
+                </li> */}
                 <li class="hover:text-primary">
                 <Link to="/portfolio">Portfolio</Link>
                 </li>
